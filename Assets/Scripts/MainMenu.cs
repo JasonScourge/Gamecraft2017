@@ -7,6 +7,10 @@ public class MainMenu : MonoBehaviour {
 	public GameObject howToPlay;
 	public GameObject creditsScreen;
 
+	/// Scenes Index
+	/// 0 - MainMenu
+	/// 1 - GameScene
+
 	public void exitGame(){
 		Application.Quit ();
 	}
