@@ -6,14 +6,20 @@ public class Player : MonoBehaviour {
 
 	public LayerMask targets;
 
+	InteractableSpawner objectSpawner;
+
 	GameObject draggedObject;		// for tracking the target object to be dragged
-	
+
+	void Start () {
+		objectSpawner = GameObject.Find ("GameManager").GetComponent<InteractableSpawner> ();
+	}
+
 	// Update is called once per frame
 	void Update () {
 		// Captures mouse inputs and handle them
 		if (Input.GetMouseButtonDown (0)) {
 			OnMouseClick (Input.mousePosition);
-		} else if (Input.GetMouseButtonUp (0)) {
+		} else if (!Input.GetMouseButton (0)) {
 			OnMouseRelease ();
 		} else if (Input.GetMouseButton (0)) {
 			OnMouseDrag ();
@@ -36,7 +42,7 @@ public class Player : MonoBehaviour {
 	void OnMouseRelease () {
 		if (draggedObject != null) {
 			// Release the object
-			draggedObject.GetComponent<Interactables> ().OnMouseRelease ();
+			draggedObject.GetComponent<Interactables> ().OnMouseRelease (Input.mousePosition);
 			draggedObject = null;
 		}
 	}

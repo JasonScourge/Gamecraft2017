@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 114791577}
   - component: {fileID: 114791579}
   - component: {fileID: 114791578}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: grassMid (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -221,7 +221,7 @@ GameObject:
   - component: {fileID: 166609160}
   - component: {fileID: 166609162}
   - component: {fileID: 166609161}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: grassMid (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -320,7 +320,7 @@ GameObject:
   - component: {fileID: 201845445}
   - component: {fileID: 201845447}
   - component: {fileID: 201845446}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: grassMid (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -419,7 +419,7 @@ GameObject:
   - component: {fileID: 257493234}
   - component: {fileID: 257493236}
   - component: {fileID: 257493235}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: grassMid (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -614,7 +614,7 @@ GameObject:
   - component: {fileID: 339549740}
   - component: {fileID: 339549742}
   - component: {fileID: 339549741}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: grassMid (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -713,7 +713,7 @@ GameObject:
   - component: {fileID: 354950765}
   - component: {fileID: 354950767}
   - component: {fileID: 354950766}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: grassMid (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -920,6 +920,60 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &461193430
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 461193431}
+  - component: {fileID: 461193432}
+  m_Layer: 0
+  m_Name: RightBound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &461193431
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 461193430}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 34.5, y: -7, z: 0}
+  m_LocalScale: {x: 30, y: 8, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1282817379}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &461193432
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 461193430}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &496412064
 GameObject:
   m_ObjectHideFlags: 0
@@ -930,7 +984,7 @@ GameObject:
   - component: {fileID: 496412065}
   - component: {fileID: 496412067}
   - component: {fileID: 496412066}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: grassMid (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1214,7 +1268,7 @@ GameObject:
   - component: {fileID: 570991184}
   - component: {fileID: 570991186}
   - component: {fileID: 570991185}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: grassMid (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1371,7 +1425,7 @@ GameObject:
   - component: {fileID: 695297029}
   - component: {fileID: 695297031}
   - component: {fileID: 695297030}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: grassMid (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1470,7 +1524,7 @@ GameObject:
   - component: {fileID: 710720235}
   - component: {fileID: 710720237}
   - component: {fileID: 710720236}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: grassMid (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1569,7 +1623,7 @@ GameObject:
   - component: {fileID: 721916461}
   - component: {fileID: 721916463}
   - component: {fileID: 721916462}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: grassMid (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1668,7 +1722,7 @@ GameObject:
   - component: {fileID: 726263433}
   - component: {fileID: 726263435}
   - component: {fileID: 726263434}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: grassMid (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1767,7 +1821,7 @@ GameObject:
   - component: {fileID: 779369313}
   - component: {fileID: 779369315}
   - component: {fileID: 779369314}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: grassMid (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1866,7 +1920,7 @@ GameObject:
   - component: {fileID: 850722785}
   - component: {fileID: 850722787}
   - component: {fileID: 850722786}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: grassMid (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1965,7 +2019,7 @@ GameObject:
   - component: {fileID: 893697292}
   - component: {fileID: 893697294}
   - component: {fileID: 893697293}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: grassMid (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2166,7 +2220,7 @@ GameObject:
   - component: {fileID: 928718280}
   - component: {fileID: 928718282}
   - component: {fileID: 928718281}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: grassMid (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2265,7 +2319,7 @@ GameObject:
   - component: {fileID: 962857420}
   - component: {fileID: 962857422}
   - component: {fileID: 962857421}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: grassMid (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2364,7 +2418,7 @@ GameObject:
   - component: {fileID: 1009764255}
   - component: {fileID: 1009764257}
   - component: {fileID: 1009764256}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: grassMid (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2463,7 +2517,7 @@ GameObject:
   - component: {fileID: 1050394958}
   - component: {fileID: 1050394960}
   - component: {fileID: 1050394959}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: grassMid (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2562,7 +2616,7 @@ GameObject:
   - component: {fileID: 1051801994}
   - component: {fileID: 1051801996}
   - component: {fileID: 1051801995}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: grassMid (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2661,7 +2715,7 @@ GameObject:
   - component: {fileID: 1055921653}
   - component: {fileID: 1055921655}
   - component: {fileID: 1055921654}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: grassMid (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2795,6 +2849,38 @@ MonoBehaviour:
   - {fileID: 374171959}
   - {fileID: 898445563}
   smoothing: 1
+--- !u!1 &1282817378
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1282817379}
+  m_Layer: 0
+  m_Name: Boundaries
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1282817379
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1282817378}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2022089864}
+  - {fileID: 2002687339}
+  - {fileID: 1434923109}
+  - {fileID: 461193431}
+  m_Father: {fileID: 1786642003}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1360325989
 GameObject:
   m_ObjectHideFlags: 0
@@ -2956,6 +3042,60 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &1434923108
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1434923109}
+  - component: {fileID: 1434923110}
+  m_Layer: 0
+  m_Name: LeftBound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1434923109
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1434923108}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -34.5, y: -7, z: 0}
+  m_LocalScale: {x: 30, y: 8, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1282817379}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1434923110
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1434923108}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1449932236
 GameObject:
   m_ObjectHideFlags: 0
@@ -2966,7 +3106,7 @@ GameObject:
   - component: {fileID: 1449932237}
   - component: {fileID: 1449932239}
   - component: {fileID: 1449932238}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: grassMid (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3065,7 +3205,7 @@ GameObject:
   - component: {fileID: 1498200923}
   - component: {fileID: 1498200925}
   - component: {fileID: 1498200924}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: grassMid (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3164,7 +3304,7 @@ GameObject:
   - component: {fileID: 1502946820}
   - component: {fileID: 1502946822}
   - component: {fileID: 1502946821}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: grassMid (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3263,7 +3403,7 @@ GameObject:
   - component: {fileID: 1540492402}
   - component: {fileID: 1540492404}
   - component: {fileID: 1540492403}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: grassMid (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3362,7 +3502,7 @@ GameObject:
   - component: {fileID: 1619233273}
   - component: {fileID: 1619233275}
   - component: {fileID: 1619233274}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: grassMid (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3542,6 +3682,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 908794140}
+  - {fileID: 1282817379}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3597,10 +3738,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1814676182}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37f0394dee3aee2488700c72dfca1dcc, type: 3}
+  m_Script: {fileID: 11500000, guid: 56057d54dc5cf9b46960ffe49e696d92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingMoveSpeed: 0
+  pSpawnHuman: 5
+  pSpawnLego: 5
+  human: {fileID: 1124532214460554, guid: 892eb3dc413571e439edfae972150ce4, type: 2}
+  lego: {fileID: 1124532214460554, guid: 48d2c6809d63b4149887db20161a1b12, type: 2}
+  humanObjPool: []
+  legoObjPool: []
+  maxObjects: 20
 --- !u!1 &1910484598
 GameObject:
   m_ObjectHideFlags: 0
@@ -3611,7 +3758,7 @@ GameObject:
   - component: {fileID: 1910484599}
   - component: {fileID: 1910484601}
   - component: {fileID: 1910484600}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: grassMid (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3710,7 +3857,7 @@ GameObject:
   - component: {fileID: 1971992544}
   - component: {fileID: 1971992546}
   - component: {fileID: 1971992545}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: grassMid (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3799,3 +3946,111 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &2002687338
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2002687339}
+  - component: {fileID: 2002687340}
+  m_Layer: 0
+  m_Name: BottomBound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2002687339
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2002687338}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -16, z: 0}
+  m_LocalScale: {x: 50, y: 10, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1282817379}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2002687340
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2002687338}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!1 &2022089863
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2022089864}
+  - component: {fileID: 2022089865}
+  m_Layer: 0
+  m_Name: TopBound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2022089864
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2022089863}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalScale: {x: 50, y: 10, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1282817379}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2022089865
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2022089863}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0

@@ -5,11 +5,15 @@ using UnityEngine;
 [RequireComponent(typeof(SpriteRenderer))]
 
 public class RoadTiling : MonoBehaviour {
-
+	
     //Offset checking position
     public int offsetX = 2;
 
-    //Check if need to intsantiate
+	public static InteractableSpawner objectSpawner;
+
+	GameObject objectOnTile;
+
+    //Check if need to instantiate
     public bool hasARightBuddy = false;
     public bool hasALeftBuddy = false;
 
@@ -29,6 +33,7 @@ public class RoadTiling : MonoBehaviour {
         cam = Camera.main;
         myTransform = transform;
 
+		objectSpawner = GameObject.Find ("GameManager").GetComponent<InteractableSpawner> ();
     }
 
 
@@ -91,6 +96,11 @@ public class RoadTiling : MonoBehaviour {
                 newBuddy.GetComponent<SpriteRenderer>().sprite = roadTile2;
                 break;
         }
+
+		GameObject interactable = objectSpawner.SpawnObjectAtPositionAtGivenProbability (newPosition);
+		if (interactable != null) {
+			objectOnTile = interactable;
+		}
     }
 
     void CheckToDestroy() {

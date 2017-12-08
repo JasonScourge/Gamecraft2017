@@ -23,13 +23,13 @@ GameObject:
   - component: {fileID: 114931739126189838}
   - component: {fileID: 50296934400541396}
   - component: {fileID: 61558651837948252}
-  m_Layer: 8
-  m_Name: DummyInteractable
+  m_Layer: 10
+  m_Name: DummyLego
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4415281151538222
 Transform:
   m_ObjectHideFlags: 1
