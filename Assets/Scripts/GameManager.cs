@@ -3,24 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour {
-	
-	public float startingMoveSpeed;
-	float moveSpeed;
 
-	public float MoveSpeed {
-		get {
-			return moveSpeed;
-		}
-		set {
-			moveSpeed = value;
-		}
-	}
+	CameraMovement cameraMovementScript;
+
+	public float speedIncrement;
+	public int speedIncrementInterval;
+	float accumulatedDuration;
+
+	bool hasIncrementedSpeed = true;	// this is set to true to prevent speed increment on game start!
 
 	void Start () {
-		moveSpeed = startingMoveSpeed;
+		cameraMovementScript = Camera.main.gameObject.GetComponent<CameraMovement> ();
 	}
 
 	void Update () {
-		// TODO: move the camera and gradually ramp up the camera's movement speed over time
+		accumulatedDuration += Time.deltaTime;
+
+		if (Mathf.FloorToInt (accumulatedDuration) % speedIncrementInterval == 0) {
+			if (!hasIncrementedSpeed) {
+				// Increment the speed of the dinosaur after every set interval
+				hasIncrementedSpeed = true;
+				cameraMovementScript.IncreaseSpeed (speedIncrement);
+			}
+		} else if (Mathf.FloorToInt (accumulatedDuration) % speedIncrementInterval == 1) {
+			hasIncrementedSpeed = false;
+		}
 	}
 }

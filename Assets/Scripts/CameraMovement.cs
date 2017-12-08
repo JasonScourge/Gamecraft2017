@@ -38,4 +38,24 @@ public class CameraMovement : MonoBehaviour {
         this.increaseSpeedValue = increaseSpeedValue;
         increaseSpeedNextAnimCycle = true;
     }
+
+	public void TriggerSlowEffect (float slowAmount, float delayDuration) {
+		StartCoroutine (SlowDinosaurCoroutine (slowAmount, delayDuration));
+	}
+
+	// Distributes the slow effect over 3 intervals
+	IEnumerator SlowDinosaurCoroutine(float slowAmount, float delayDuration) {
+		float oldSpeed = animator.speed;
+		float oldSpeedIncreaseValue = this.increaseSpeedValue;
+
+		// Perform slowing effect
+		float newSpeed = Mathf.Clamp(oldSpeed - slowAmount, 0, Mathf.Infinity);
+
+		animator.speed = newSpeed;
+		IncreaseSpeed (0);
+
+		yield return new WaitForSeconds (delayDuration);
+		animator.speed = oldSpeed;
+		IncreaseSpeed (oldSpeedIncreaseValue);
+	}
 }
