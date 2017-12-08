@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour {
 
+    public float cameraSpeed = 0.5f;
+
 	// Use this for initialization
 	void Start () {
 		
 	}
 	
 	// Update is called once per frame
-	void Update () {
-        transform.position += Vector3.right;
+	void FixedUpdate () {
+        transform.position -= (Vector3.right * cameraSpeed);
 	}
 }

@@ -51,6 +51,7 @@ public class Tiling : MonoBehaviour {
                 hasALeftBuddy = true;
             }
         }
+        CheckToDestroy();
     }
 
     //Create a buddy on the side required
@@ -71,4 +72,12 @@ public class Tiling : MonoBehaviour {
             newBuddy.GetComponent<Tiling>().hasARightBuddy = true;
         }
     }
+
+    void CheckToDestroy() {
+        float distanceFromCamera = Vector3.Distance(cam.transform.position, transform.position);
+
+        if (distanceFromCamera >= 200f) {
+            Destroy(gameObject);
+        }
+    } 
 }
