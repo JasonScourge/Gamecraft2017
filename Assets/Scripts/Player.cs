@@ -19,11 +19,11 @@ public class Player : MonoBehaviour {
 		// Captures mouse inputs and handle them
 		if (Input.GetMouseButtonDown (0)) {
 			OnMouseClick (Input.mousePosition);
-		} else if (!Input.GetMouseButton (0)) {
-			OnMouseRelease ();
 		} else if (Input.GetMouseButton (0)) {
 			OnMouseDrag ();
-		}
+		} else {
+			OnMouseRelease ();
+		} 
 	}
 
 	void OnMouseClick (Vector3 mousePosition) {

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Blackboard : MonoBehaviour {
 
+	public GameOverTransition endGameScript;
+
 	public int startingLives;
 	int lives;
 
@@ -25,7 +27,7 @@ public class Blackboard : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (lives <= 0) {
-			// TODO: Invoke game-over state
+			endGameScript.gameOver ();
 		}
 	}
 }

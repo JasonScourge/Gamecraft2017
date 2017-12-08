@@ -59,7 +59,7 @@ public class Interactables : MonoBehaviour {
 		if (hitRes.collider == null) {
 			// If raycast using mouse cursor position doesn't register any cell,
 			// we use the object's position to determine which cell it should be on.
-			Collider2D cellOverlap = Physics2D.OverlapPoint(GetComponent<Rigidbody2D>().position, cellMask);
+			Collider2D cellOverlap = Physics2D.OverlapCircle(GetComponent<Rigidbody2D>().position, 2.5f, cellMask);
 			gameObject.transform.position = cellOverlap.gameObject.transform.position;
 		} else {
 			// If there's a detected cell from raycast result, use that.
