@@ -20,16 +20,16 @@ GameObject:
   m_Component:
   - component: {fileID: 4415281151538222}
   - component: {fileID: 212005276822368640}
-  - component: {fileID: 114931739126189838}
   - component: {fileID: 50296934400541396}
   - component: {fileID: 61558651837948252}
-  m_Layer: 8
-  m_Name: DummyInteractable
+  - component: {fileID: 114283179280369368}
+  m_Layer: 9
+  m_Name: DummyHuman
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4415281151538222
 Transform:
   m_ObjectHideFlags: 1
@@ -88,7 +88,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3, y: 1.3}
   m_EdgeRadius: 0
---- !u!114 &114931739126189838
+--- !u!114 &114283179280369368
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1124532214460554}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 583490f8853193b44a4d9aae1299730f, type: 3}
+  m_Script: {fileID: 11500000, guid: 5dc642cdd763c2644a06799fa32a2e3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cellMask:
@@ -137,7 +137,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 30310a2e64e85d9459dc853698d79047, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.986207, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

@@ -9,8 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: f30947b468eb99544a6661a3b681aba1
   - enabled: 1
-    path: Assets/Scenes/CameraTest.unity
-    guid: ee428805eef219e4e85273208f18a104
+    path: Assets/Scenes/GameScene.unity
+    guid: 7d8b2c5ac745def4b887b86f01b6f567
   - enabled: 1
     path: Assets/Scenes/EndGame.unity
     guid: fd524983f66cda441aa79c451e485903
+  - enabled: 0
+    path: Assets/Scenes/CameraTest.unity
+    guid: ee428805eef219e4e85273208f18a104
