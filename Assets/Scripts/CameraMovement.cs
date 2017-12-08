@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EmptyScript : MonoBehaviour {
+public class CameraMovement : MonoBehaviour {
+
+    public float cameraSpeed = 0.5f;
 
 	// Use this for initialization
 	void Start () {
@@ -10,7 +12,7 @@ public class EmptyScript : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
+	void FixedUpdate () {
+        transform.position -= (Vector3.right * cameraSpeed);
 	}
 }
