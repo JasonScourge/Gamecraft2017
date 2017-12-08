@@ -14,7 +14,7 @@ public class PauseResume : MonoBehaviour {
 	void Start () {
 		isPaused = false;
 		stopPause = false;
-		timePaused = 0.00001f;
+		timePaused = 0;
 	}
 	
 	// Update is called once per frame
