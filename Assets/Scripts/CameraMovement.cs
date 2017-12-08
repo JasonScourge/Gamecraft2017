@@ -13,6 +13,10 @@ public class CameraMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-        transform.position -= (Vector3.right * cameraSpeed);
+        //transform.position -= (Vector3.right * cameraSpeed);
 	}
+
+    public void MoveCamera() {
+        transform.position -= new Vector3(0, 0, 4);
+    }
 }
