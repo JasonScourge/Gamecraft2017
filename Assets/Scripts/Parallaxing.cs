@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+
+
 public class Parallaxing : MonoBehaviour {
     public Transform[] backgrounds; // Array (list) of all the back- and foregrounds to be parallaxed
     private float[] parallaxScales; // The proportion of the camera's movement to move the backgrounds by
