@@ -4,8 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
-
 	public GameObject howToPlay;
+	public GameObject creditsScreen;
 
 	public void exitGame(){
 		Application.Quit ();
@@ -15,11 +15,19 @@ public class MainMenu : MonoBehaviour {
 		SceneManager.LoadScene (1);
 	}
 
-	public void instructionsOpen(){
+	public void openInstructions(){
 		howToPlay.SetActive (true);
 	}
 
-	public void instructionsClose(){
+	public void closeInstructions(){
 		howToPlay.SetActive (false);
+	}
+
+	public void openCredits(){
+		creditsScreen.SetActive (true);
+	}
+
+	public void closeCredits(){
+		creditsScreen.SetActive (false);
 	}
 }
