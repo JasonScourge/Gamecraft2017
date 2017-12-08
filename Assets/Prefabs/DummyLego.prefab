@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 114931739126189838}
   - component: {fileID: 50296934400541396}
   - component: {fileID: 61558651837948252}
+  - component: {fileID: 114423830958103030}
   m_Layer: 10
   m_Name: DummyLego
   m_TagString: Untagged
@@ -88,6 +89,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3, y: 1.3}
   m_EdgeRadius: 0
+--- !u!114 &114423830958103030
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1124532214460554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bfa277fdf8536e4cbd82a7d4ebddca3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cellMask:
+    serializedVersion: 2
+    m_Bits: 4096
+  slowAmount: 0.5
+  slowDuration: 3
 --- !u!114 &114931739126189838
 MonoBehaviour:
   m_ObjectHideFlags: 1

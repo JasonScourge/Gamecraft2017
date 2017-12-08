@@ -11,8 +11,6 @@ public class RoadTiling : MonoBehaviour {
 
 	public static InteractableSpawner objectSpawner;
 
-	GameObject objectOnTile;
-
     //Check if need to instantiate
     public bool hasARightBuddy = false;
     public bool hasALeftBuddy = false;
@@ -97,10 +95,7 @@ public class RoadTiling : MonoBehaviour {
                 break;
         }
 
-		GameObject interactable = objectSpawner.SpawnObjectAtPositionAtGivenProbability (newPosition);
-		if (interactable != null) {
-			objectOnTile = interactable;
-		}
+		objectSpawner.SpawnObjectAtPositionAtGivenProbability (newPosition);
     }
 
     void CheckToDestroy() {

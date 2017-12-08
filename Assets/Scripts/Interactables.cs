@@ -72,8 +72,10 @@ public class Interactables : MonoBehaviour {
 	// Called by the dinosaur's foot.
 	public virtual void OnSquishedByFoot () {
 		isDragged = false;
-		onDestroyCallbackFunc ();
-		Destroy (this.gameObject);
+		if (onDestroyCallbackFunc != null) {
+			onDestroyCallbackFunc ();
+		}
+		gameObject.SetActive (false);
 	}
 
 	public virtual void FollowMouse (Vector3 mousePosition) {
