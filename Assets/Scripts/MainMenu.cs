@@ -4,15 +4,26 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
-	public GameObject howToPlay;
-	public GameObject creditsScreen;
+	public GameObject toContinue;
+	public GameObject instructions;
 
+	private bool text;
 	/// Scenes Index
 	/// 0 - MainMenu
 	/// 1 - GameScene
 
+	void Start(){
+		text = true;
+	}
+
 	void Update () {
-		if (Input.anyKeyDown) {
+		if (text) {
+			if (Input.anyKeyDown) {
+				toContinue.SetActive (false);
+				instructions.SetActive (true);
+			}
+			StartCoroutine ("startTime");
+		} else {
 			startGame ();
 		}
 	}
@@ -25,19 +36,9 @@ public class MainMenu : MonoBehaviour {
 		SceneManager.LoadScene (1);
 	}
 
-	public void openInstructions(){
-		howToPlay.SetActive (true);
+	IEnumerator startTime(){
+		yield return new WaitForSecondsRealtime (5.0f);
+		text = false;
 	}
 
-	public void closeInstructions(){
-		howToPlay.SetActive (false);
-	}
-
-	public void openCredits(){
-		creditsScreen.SetActive (true);
-	}
-
-	public void closeCredits(){
-		creditsScreen.SetActive (false);
-	}
 }
