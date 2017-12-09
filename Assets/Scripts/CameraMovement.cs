@@ -16,15 +16,13 @@ public class CameraMovement : MonoBehaviour {
 
     // Update is called once per frame
     void FixedUpdate () {
+
         if (isMoving) {
             this.transform.position = Vector3.SmoothDamp(transform.position, newPosition, ref currentVelocity, (dinoClip.length/10) / animator.speed, float.MaxValue, Time.deltaTime);
         }
 
-        if(transform.position == newPosition) {
+        if (transform.position == newPosition) {
             isMoving = false;
-            if (increaseSpeedNextAnimCycle) {
-                animator.speed += increaseSpeedValue;
-            }
         }
     }
 
@@ -35,11 +33,11 @@ public class CameraMovement : MonoBehaviour {
     }
 
     public void IncreaseSpeed(float increaseSpeedValue) {
-        this.increaseSpeedValue = increaseSpeedValue;
-        increaseSpeedNextAnimCycle = true;
+        animator.speed += increaseSpeedValue;
+        Debug.Log(animator.speed);
     }
 
-	public void TriggerSlowEffect (float slowAmount, float delayDuration) {
+    public void TriggerSlowEffect (float slowAmount, float delayDuration) {
 		StartCoroutine (SlowDinosaurCoroutine (slowAmount, delayDuration));
 	}
 

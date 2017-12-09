@@ -6,6 +6,8 @@ public class Blackboard : MonoBehaviour {
 
 	public GameOverTransition endGameScript;
 
+    public GameObject[] heartUIArray;
+
 	public int startingLives;
 	int lives;
 
@@ -17,7 +19,8 @@ public class Blackboard : MonoBehaviour {
 
 	public void DeductOneLife () {
 		lives -= 1;
-	}
+        heartUIArray[lives].SetActive(false);
+    }
 
 	// Use this for initialization
 	void Start () {
