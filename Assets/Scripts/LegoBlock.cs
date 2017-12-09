@@ -9,7 +9,7 @@ public class LegoBlock : Interactables {
 
 	public override void OnSquishedByFoot () {
         //Camera.main.GetComponent<CameraMovement> ().TriggerSlowEffect (slowAmount, slowDuration);
-        Camera.main.GetComponent<CameraMovement>().IncreaseSpeed(-0.05f);
+        Camera.main.GetComponent<CameraMovement>().IncreaseSpeed(-0.075f);
         base.OnSquishedByFoot ();
 	}
 }

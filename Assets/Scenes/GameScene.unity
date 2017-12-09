@@ -358,7 +358,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c288e615115992848809fe399da07a2c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6651095867c02874fb8c63bc10d9b7b9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -457,7 +457,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c288e615115992848809fe399da07a2c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6651095867c02874fb8c63bc10d9b7b9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -556,7 +556,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c288e615115992848809fe399da07a2c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6651095867c02874fb8c63bc10d9b7b9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -787,7 +787,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 526263697
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 1441b8c2ec70c6f4a901e46c914f3b0f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1195,7 +1195,7 @@ MonoBehaviour:
   reverseScale: 0
   roadTile0: {fileID: 21300000, guid: e439ac373b6707648aee198b36d58992, type: 3}
   roadTile1: {fileID: 21300000, guid: e439ac373b6707648aee198b36d58992, type: 3}
-  roadTile2: {fileID: 21300000, guid: c288e615115992848809fe399da07a2c, type: 3}
+  roadTile2: {fileID: 21300000, guid: 6651095867c02874fb8c63bc10d9b7b9, type: 3}
   currentTileCounter: 1
 --- !u!61 &658248058
 BoxCollider2D:
@@ -1320,7 +1320,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 985d77da0eca4a2468d1cd6a27a2d3b1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cfdd0b8d240e9aa4b9ce03bdad29285a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1510,7 +1510,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c288e615115992848809fe399da07a2c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6651095867c02874fb8c63bc10d9b7b9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1699,7 +1699,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c288e615115992848809fe399da07a2c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6651095867c02874fb8c63bc10d9b7b9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1763,7 +1763,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 985d77da0eca4a2468d1cd6a27a2d3b1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cfdd0b8d240e9aa4b9ce03bdad29285a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2275,7 +2275,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 985d77da0eca4a2468d1cd6a27a2d3b1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cfdd0b8d240e9aa4b9ce03bdad29285a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3024,7 +3024,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c288e615115992848809fe399da07a2c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6651095867c02874fb8c63bc10d9b7b9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3652,7 +3652,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c288e615115992848809fe399da07a2c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6651095867c02874fb8c63bc10d9b7b9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4023,7 +4023,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c288e615115992848809fe399da07a2c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6651095867c02874fb8c63bc10d9b7b9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4221,7 +4221,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c288e615115992848809fe399da07a2c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6651095867c02874fb8c63bc10d9b7b9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4509,6 +4509,7 @@ GameObject:
   - component: {fileID: 1814676185}
   - component: {fileID: 1814676186}
   - component: {fileID: 1814676187}
+  - component: {fileID: 1814676188}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -4559,8 +4560,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56057d54dc5cf9b46960ffe49e696d92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pSpawnHuman: 10
-  pSpawnLego: 5
+  pSpawnHuman: 8
+  pSpawnLego: 4
   human: {fileID: 1442233872416246, guid: 10c6161689ad9ab4c993d9cdfd3a4d62, type: 2}
   lego: {fileID: 1124532214460554, guid: 48d2c6809d63b4149887db20161a1b12, type: 2}
   humanObjPool: []
@@ -4583,13 +4584,29 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1814676182}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 37f0394dee3aee2488700c72dfca1dcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speedIncrement: 0.1
   speedIncrementInterval: 5
+--- !u!114 &1814676188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1814676182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76599433b62b0ab4f8c7645508bc2b6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countdown:
+  - {fileID: 515634918}
+  - {fileID: 637920546}
+  - {fileID: 1743573521}
+  - {fileID: 1824507151}
 --- !u!1 &1815164110
 GameObject:
   m_ObjectHideFlags: 0
@@ -4679,7 +4696,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c288e615115992848809fe399da07a2c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6651095867c02874fb8c63bc10d9b7b9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4955,7 +4972,7 @@ MonoBehaviour:
   reverseScale: 0
   roadTile0: {fileID: 21300000, guid: e439ac373b6707648aee198b36d58992, type: 3}
   roadTile1: {fileID: 21300000, guid: e439ac373b6707648aee198b36d58992, type: 3}
-  roadTile2: {fileID: 21300000, guid: c288e615115992848809fe399da07a2c, type: 3}
+  roadTile2: {fileID: 21300000, guid: 6651095867c02874fb8c63bc10d9b7b9, type: 3}
   currentTileCounter: 0
 --- !u!61 &2006288674
 BoxCollider2D:
