@@ -5,6 +5,8 @@ using UnityEngine;
 public class PauseResume : MonoBehaviour {
 	public GameObject[] countdown;
 
+    public GameObject pausedText;
+
 	private float timePaused;
 	private bool isPaused;
 	private bool stopPause;
@@ -19,25 +21,31 @@ public class PauseResume : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown ("p")) {
-			if (isPaused) {
-				resumeGame();
-			} else {
-				pauseGame();
-			}
-		}
+            TogglePause();
+        }
 	}
+
+    public void TogglePause() {
+        if (isPaused) {
+            resumeGame();
+        } else {
+            pauseGame();
+        }
+    }
 
 	public void pauseGame(){
 		if (!stopPause) {
 			Time.timeScale = timePaused;
-			isPaused = true;
+            pausedText.SetActive(true);
+            isPaused = true;
 		}
 	}
 
 	public void resumeGame(){
 		if (!stopPause) {
 			stopPause = !stopPause;
-			StartCoroutine ("resumeTiming");
+            pausedText.SetActive(false);
+            StartCoroutine("resumeTiming");
 		}
 	}
 
