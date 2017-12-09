@@ -4561,7 +4561,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pSpawnHuman: 10
   pSpawnLego: 5
-  human: {fileID: 1124532214460554, guid: 892eb3dc413571e439edfae972150ce4, type: 2}
+  human: {fileID: 1442233872416246, guid: 10c6161689ad9ab4c993d9cdfd3a4d62, type: 2}
   lego: {fileID: 1124532214460554, guid: 48d2c6809d63b4149887db20161a1b12, type: 2}
   humanObjPool: []
   legoObjPool: []

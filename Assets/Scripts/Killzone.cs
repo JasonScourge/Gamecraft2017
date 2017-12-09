@@ -8,7 +8,7 @@ public class Killzone : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D collider) {
         if(collider.gameObject.GetComponent<Human>() != null) {
-            cameraMoveScript.IncreaseSpeed(0.1f);
+            cameraMoveScript.IncreaseSpeed(0.005f);
             collider.gameObject.SetActive(false);
         }
 
