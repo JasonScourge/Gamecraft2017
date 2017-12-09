@@ -31,19 +31,6 @@ public class Interactables : MonoBehaviour {
 		bottomBound = GameObject.Find ("BottomBound").GetComponent<BoxCollider2D> ();
 	}
 
-	void Update () {
-		// Checks if the object ends up outside the camera somehow,
-		// then makes the player stop dragging it if he was initially dragging it
-		float maxX = (rightBound.bounds.center + rightBound.bounds.extents).x;
-		if (gameObject.transform.position.x > maxX) {
-			gameObject.SetActive (false);
-			if (onDestroyCallbackFunc != null) {
-				isDragged = false;
-				onDestroyCallbackFunc ();
-			}
-		}
-	}
-
 	public virtual void OnMouseClick (OnDestroyCallback destroyCallbackFunc) {
 		isDragged = true;
 		onDestroyCallbackFunc = destroyCallbackFunc;
