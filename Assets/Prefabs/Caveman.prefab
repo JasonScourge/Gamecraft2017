@@ -120,6 +120,7 @@ MonoBehaviour:
   cellMask:
     serializedVersion: 2
     m_Bits: 4096
+  squishedClip: {fileID: 8300000, guid: 83e4a9d3bd5bbad45b0c6239ad8b58a8, type: 3}
 --- !u!212 &212616469911307834
 SpriteRenderer:
   m_ObjectHideFlags: 1

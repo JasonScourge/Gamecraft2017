@@ -103,8 +103,7 @@ MonoBehaviour:
   cellMask:
     serializedVersion: 2
     m_Bits: 4096
-  slowAmount: 0.5
-  slowDuration: 3
+  legoBreakClip: {fileID: 8300000, guid: f405789ee61dc464e825147af4fc825e, type: 3}
 --- !u!114 &114931739126189838
 MonoBehaviour:
   m_ObjectHideFlags: 1
