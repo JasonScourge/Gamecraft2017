@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class LegoBlock : Interactables {
 
-	public float slowAmount;
-	public float slowDuration;
+	AudioSource audioSource;
+	public AudioClip legoBreakClip;
+
+	void Start () {
+		audioSource = GameObject.Find ("InteractableAudiosource").GetComponent<AudioSource> ();
+	}
 
 	public override void OnSquishedByFoot () {
-        //Camera.main.GetComponent<CameraMovement> ().TriggerSlowEffect (slowAmount, slowDuration);
+		audioSource.PlayOneShot (legoBreakClip);
         Camera.main.GetComponent<CameraMovement>().IncreaseSpeed(-0.05f);
         base.OnSquishedByFoot ();
 	}
