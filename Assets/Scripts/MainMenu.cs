@@ -11,6 +11,12 @@ public class MainMenu : MonoBehaviour {
 	/// 0 - MainMenu
 	/// 1 - GameScene
 
+	void Update () {
+		if (Input.anyKeyDown) {
+			startGame ();
+		}
+	}
+
 	public void exitGame(){
 		Application.Quit ();
 	}
