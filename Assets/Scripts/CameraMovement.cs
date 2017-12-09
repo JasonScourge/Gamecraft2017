@@ -24,6 +24,7 @@ public class CameraMovement : MonoBehaviour {
             isMoving = false;
             if (increaseSpeedNextAnimCycle) {
                 animator.speed += increaseSpeedValue;
+                increaseSpeedNextAnimCycle = false;
             }
         }
     }

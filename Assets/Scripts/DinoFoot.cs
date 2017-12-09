@@ -8,6 +8,7 @@ public class DinoFoot : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D collider) {
 		if (collider.gameObject.layer.Equals (LayerMask.NameToLayer ("Human"))) {
+            Debug.Log("Squished a human.");
 			collider.gameObject.GetComponent<Human> ().OnSquishedByFoot ();
 			blackboard.DeductOneLife ();
 		} else if (collider.gameObject.layer.Equals (LayerMask.NameToLayer ("Lego"))) {
