@@ -6,7 +6,6 @@ public class PauseResume : MonoBehaviour {
 	public GameObject[] countdown;
 
 	private float timePaused;
-	private float storedTime;
 	private bool isPaused;
 	private bool stopPause;
 
@@ -30,7 +29,6 @@ public class PauseResume : MonoBehaviour {
 
 	public void pauseGame(){
 		if (!stopPause) {
-			storedTime = Time.timeScale;
 			Time.timeScale = timePaused;
 			isPaused = true;
 		}
@@ -54,7 +52,7 @@ public class PauseResume : MonoBehaviour {
 			yield return new WaitForSecondsRealtime (0.9f);
 		}
 		countdown [countdown.Length-1].SetActive(false);
-		Time.timeScale = storedTime;
+		Time.timeScale = 1.0f;
 
 		yield return new WaitForSecondsRealtime (0.1f);
 		isPaused = false;
