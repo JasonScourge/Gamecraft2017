@@ -7,38 +7,38 @@ public class MainMenu : MonoBehaviour {
 	public GameObject toContinue;
 	public GameObject instructions;
 
-	private bool text;
+	private int count;
 	/// Scenes Index
 	/// 0 - MainMenu
 	/// 1 - GameScene
 
-	void Start(){
-		text = true;
+	void Start () {
+		count = 0;
 	}
 
 	void Update () {
-		if (text) {
-			if (Input.anyKeyDown) {
+		if (Input.anyKeyDown) {
+			if (count == 0) {
 				toContinue.SetActive (false);
 				instructions.SetActive (true);
+				count = 1;
+			} else if (count > 0) {
+				StartCoroutine ("startTime");
 			}
-			StartCoroutine ("startTime");
-		} else {
-			startGame ();
 		}
 	}
 
-	public void exitGame(){
+	public void exitGame () {
 		Application.Quit ();
 	}
 
-	public void startGame(){
+	public void startGame () {
 		SceneManager.LoadScene (1);
 	}
 
-	IEnumerator startTime(){
-		yield return new WaitForSecondsRealtime (5.0f);
-		text = false;
+	IEnumerator startTime () {
+		yield return new WaitForSecondsRealtime (0.5f);
+		startGame ();
 	}
 
 }
